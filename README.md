@@ -1,4 +1,4 @@
-# AI Photo Scaner Hunt
+# AI Photo Scanner Hunt
 
 A fun photo scavenger hunt game implemented using [Flutter](https://flutter.dev) and [Google AI Dart SDK](https://pub.dev/packages/google_generative_ai). Generative AI model used for the project: [Google Gemini Pro Vision](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/overview).
 
