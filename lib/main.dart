@@ -15,10 +15,16 @@ void main() {
 
   if (const bool.fromEnvironment('USE_FAKE_DATA', defaultValue: false)) {
     repository = const FakeScavengerHuntRepository();
+    print('fake data truee');
   } else {
-    const apiKey = String.fromEnvironment('API_KEY');
-    const projectUrl = String.fromEnvironment('VERTEX_AI_PROJECT_URL');
+    // const apiKey = String.fromEnvironment('API_KEY'); 
+    const apiKey = 'AIzaSyBL5AJz3FzeCxViEoIIZnV_fztM1siwSrg'; // To use the Gemini API, you'll need an API key. If you don't already have one, create a key in Google AI Studio: https://makersuite.google.com/app/apikey.
+    
 
+    
+    const projectUrl = String.fromEnvironment('VERTEX_AI_PROJECT_URL');
+print('api key $apiKey');
+    print('api key $projectUrl');
     final client = projectUrl.isEmpty
         ? ScavengerHuntClient(apiKey: apiKey)
         : ScavengerHuntClient.vertexAi(apiKey: apiKey, projectUrl: projectUrl);

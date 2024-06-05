@@ -7,7 +7,7 @@ class ScavengerHuntClient {
   ScavengerHuntClient({
     required String apiKey,
   }) : _model = GenerativeModel(
-          model: 'gemini-pro-vision',
+          model: 'gemini-1.5-flash',
           apiKey: apiKey,
         );
 
